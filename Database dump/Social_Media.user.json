@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "66128ae79ade70489a0f0af2"
+  },
+  "name": "Arusha Ramessur",
+  "email": "ar1736@live.mdx.ac.uk",
+  "password": "Arusha@3005"
+},
+{
+  "_id": {
+    "$oid": "65b15f0538a12f0baaa50d2b"
+  },
+  "name": "kushal Ramessur",
+  "email": "kusharamessur@gmail.com",
+  "password": "kushal#1234"
+},
+{
+  "_id": {
+    "$oid": "65b15fb438a12f0baaa50d31"
+  },
+  "name": "Alice wonder",
+  "email": "alicewonder@gmail.com",
+  "password": "alice^1234"
+},
+{
+  "_id": {
+    "$oid": "6612f039dad21300cb93ca88"
+  },
+  "name": "Kris evan",
+  "email": "krisevans@hotmail.com",
+  "password": "maldives*1999"
+}]

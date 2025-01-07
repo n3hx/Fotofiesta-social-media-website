@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6612b3792e804845beef51ae"
+  },
+  "caption": "Hello world"
+},
+{
+  "_id": {
+    "$oid": "6612b3a42e804845beef51af"
+  },
+  "caption": "First time using foto fiesta"
+},
+{
+  "_id": {
+    "$oid": "6612bf134f0485b1360852c8"
+  },
+  "caption": "Had an eventful day"
+},
+{
+  "_id": {
+    "$oid": "6612efaddad21300cb93ca86"
+  },
+  "comment": "It always seems impossible until it is done."
+},
+{
+  "_id": {
+    "$oid": "6612fd4736685cace9877b38"
+  },
+  "caption": "The struggle is real"
+}]

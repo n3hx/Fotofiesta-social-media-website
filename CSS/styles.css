@@ -1,0 +1,386 @@
+/* General styling for the entire body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffcccc, #ccffcc);
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Styling for the header */
+header {
+  background: linear-gradient(to right, #ffcccc, #ccffcc);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for the sidebar */
+#sidebar {
+  position: fixed;
+  top: 60px; /* Adjusted top position */
+  width: 200px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#sidebar img {
+  margin-bottom: 20px;
+}
+
+/* Styling for navigation links */
+nav a {
+  text-decoration: none;
+  color: #000000;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  text-align: center;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #f22d96;
+}
+
+/* Styling for the main content area */
+main {
+  display: flex;
+}
+
+/* Styling for the fixed widget column */
+.widget-column {
+  position: fixed;
+  right: 0; 
+  top: 5px; 
+  width: 250px;
+  background: linear-gradient(to right, #66ccff, #ff99cc);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add scrollbar to the widget column */
+  max-height: calc(90vh - 40px);
+}
+
+/* Styling for the main content area */
+#content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px; 
+  margin-right: 350px;
+}
+
+/* Styling for individual feed items */
+.feed-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+/* Styling for buttons */
+.likeBtn,
+.commentBtn,
+.saveBtn,
+.cancelBtn {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.likeBtn:hover,
+.commentBtn:hover,
+.saveBtn:hover,
+.cancelBtn:hover {
+  background-color: #fb91ca63;
+}
+
+.likeBtn.liked {
+  color: red;
+}
+
+/* Styling for images in the content area */
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for the comment form */
+.comment-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form input,
+.comment-form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-form input[type="submit"],
+.comment-form input[type="button"] {
+  cursor: pointer;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.comment-form input[type="submit"]:hover,
+.comment-form input[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Styling for login, signup, and general forms */
+#loginForm,
+#signupForm,
+#content form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#loginForm label,
+#signupForm label,
+#content form label {
+  margin-top: 10px;
+}
+
+#loginForm input,
+#signupForm input,
+#content form input {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#loginForm button,
+#signupForm button,
+#content form input[type="submit"],
+#content #edit-profile button[type="button"] {
+  background-color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#loginForm button:hover,
+#signupForm button:hover,
+#content form input[type="submit"]:hover,
+#content #edit-profile button[type="button"]:hover {
+  background-color: #f22d96;
+}
+
+#loginForm p,
+#signupForm p,
+#content form p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#loginForm a,
+#signupForm a,
+#content form a {
+  color: #3366cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#loginForm a:hover,
+#signupForm a:hover,
+#content form a:hover {
+  color: #003366;
+}
+
+/* Styling for the footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+/* Styling for the post form */
+#post-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#post-form label {
+  margin-top: 10px;
+}
+
+#post-form input {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#post-form input[type="submit"],
+#post-form input[type="button"] {
+  background-color: #f44336;
+  color: rgb(5, 5, 5);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#post-form input[type="submit"]:hover,
+#post-form input[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Styling for the edit profile form */
+#edit-profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#edit-profile input[type="file"],
+#edit-profile input[type="text"],
+#edit-profile textarea {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#edit-profile input[type="submit"],
+#edit-profile input[type="button"] {
+  background-color: #f44336;
+  color: rgb(5, 5, 5);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#edit-profile input[type="submit"]:hover,
+#edit-profile input[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Styling for the profile container */
+#profile-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the profile picture */
+#profile-picture {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Styling for user information */
+#user-info {
+  text-align: center;
+  display: flex; /* Display as flex container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+#user-info p {
+  margin: 0; /* Remove default margin for p elements */
+}
+
+/* Styling for the about me section */
+#about-me {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+/* Styling for the post container */
+#post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for individual posts */
+.post {
+  max-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Styling for comments section */
+.comments {
+  margin-top: 10px;
+}
